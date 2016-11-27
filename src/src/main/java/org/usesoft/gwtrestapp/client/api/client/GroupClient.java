@@ -17,5 +17,5 @@ public interface GroupClient extends RestService
 
     @GET
     @Path("/{id}")
-    public void getGroup(@PathParam("id") int id, MethodCallback<Group> callback);
+    public void getGroup(@PathParam("id") Long id, MethodCallback<Group> callback);
 }

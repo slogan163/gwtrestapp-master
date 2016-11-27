@@ -15,13 +15,13 @@ public class DataBase
     {
         List<Student> g1 = new ArrayList<Student>();
         List<Student> g2 = new ArrayList<Student>();
-        g1.add(new Student(1, "John", 1));
-        g1.add(new Student(2, "John", 1));
-        g2.add(new Student(3, "John", 2));
-        g2.add(new Student(4, "John", 2));
+        g1.add(new Student(new Long(1), "John", new Long(1)));
+        g1.add(new Student(new Long(2), "John", new Long(1)));
+        g2.add(new Student(new Long(3), "John", new Long(2)));
+        g2.add(new Student(new Long(4), "John", new Long(2)));
 
-        groups.add(new Group(1, "G1", g1));
-        groups.add(new Group(2, "G2", g2));
+        groups.add(new Group(new Long(1), "G1", g1));
+        groups.add(new Group(new Long(2), "G2", g2));
 
         students.addAll(g1);
         students.addAll(g2);
@@ -42,7 +42,7 @@ public class DataBase
         return groups;
     }
 
-    public Group getGroup(int id)
+    public Group getGroup(Long id)
     {
         for(Group group : groups)
         {
@@ -58,7 +58,7 @@ public class DataBase
         return students;
     }
 
-    public Student getStudent(int id)
+    public Student getStudent(Long id)
     {
         for(Student student : students)
         {

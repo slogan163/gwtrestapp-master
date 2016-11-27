@@ -5,19 +5,19 @@ import org.codehaus.jackson.annotate.JsonProperty;
 
 public class Student
 {
-    private int id;
+    private Long id;
     private String firstName;
-    private int groupId;
+    private Long groupId;
 
     @JsonCreator
-    public Student(@JsonProperty("id") int id, @JsonProperty("firstName") String firstName, @JsonProperty("groupId") int groupId)
+    public Student(@JsonProperty("id") Long id, @JsonProperty("firstName") String firstName, @JsonProperty("groupId") Long groupId)
     {
         this.id = id;
         this.firstName = firstName;
         this.groupId = groupId;
     }
 
-    public int getId()
+    public Long getId()
     {
         return id;
     }
@@ -27,7 +27,7 @@ public class Student
         return firstName;
     }
 
-    public int getGroupId()
+    public Long getGroupId()
     {
         return groupId;
     }

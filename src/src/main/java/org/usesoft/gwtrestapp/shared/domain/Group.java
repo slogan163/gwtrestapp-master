@@ -7,19 +7,19 @@ import java.util.List;
 
 public class Group
 {
-    private int id;
+    private Long id;
     private String name;
     private List<Student> students;
 
     @JsonCreator
-    public Group(@JsonProperty("id") int id, @JsonProperty("name") String name, @JsonProperty("students") List<Student> students)
+    public Group(@JsonProperty("id") Long id, @JsonProperty("name") String name, @JsonProperty("students") List<Student> students)
     {
         this.id = id;
         this.name = name;
         this.students = students;
     }
 
-    public int getId()
+    public Long getId()
     {
         return id;
     }

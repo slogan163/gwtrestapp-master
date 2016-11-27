@@ -28,7 +28,7 @@ public class GroupResource
     @GET
     @Path("/{id}")
     @Produces("application/json")
-    public Group getGroup(@PathParam("id") int id)
+    public Group getGroup(@PathParam("id") Long id)
     {
         return db.getGroup(id);
     }

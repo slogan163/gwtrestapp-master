@@ -17,5 +17,5 @@ public interface StudentClient extends RestService
 
     @GET
     @Path("/{id}")
-    public void getStudent(@PathParam("id") int id, MethodCallback<Student> callback);
+    public void getStudent(@PathParam("id") Long id, MethodCallback<Student> callback);
 }

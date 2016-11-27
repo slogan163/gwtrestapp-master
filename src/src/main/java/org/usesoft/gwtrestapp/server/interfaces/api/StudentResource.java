@@ -28,7 +28,7 @@ public class StudentResource
     @GET
     @Path("/{id}")
     @Produces("application/json")
-    public Student getStudent(@PathParam("id") int id)
+    public Student getStudent(@PathParam("id") Long id)
     {
         return db.getStudent(id);
     }
