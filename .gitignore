@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+src/gwtrestappTest-prod.launch
+*.iml
+src/gwtrestappTest-dev.launch
+*.idea
